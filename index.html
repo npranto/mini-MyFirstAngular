@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="testApp">
+
+	<head>
+		<title>Angular</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+
+	<body ng-controller="MainController">
+		
+		Hello {{firstName}} <span ng-show="showLastName">{{lastName}}</span>
+		
+		<br>
+		<button ng-click = "toggle();">Toggle</button>
+		
+		My hobbies:
+		<ul>
+			<li ng-repeat = "hobby in hobbies"> {{hobby}} </li>
+		</ul>
+
+		<!-- angular stuff -->
+
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+		<script src="app.js"></script>
+
+	</body>
+</html>
